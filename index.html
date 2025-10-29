@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cá Nhân Của Tôi</title>
+    
+    <!-- Tải font Inter từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Liên kết đến tệp CSS bên ngoài -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <header>
+        <nav>
+            <a href="#home">Trang Chủ</a>
+            <a href="#about">Giới Thiệu</a>
+            <a href="#portfolio">Dự Án</a>
+            <a href="#contact">Liên Hệ</a>
+        </nav>
+    </header>
+
+
+    <div id="message-box"></div>
+
+    <section id="home" class="content-section">
+        <h1>Chào mừng đến với Trang Web Của Tôi</h1>
+        <p style="font-size: 1.5rem; font-weight: 700;">Tôi là Vũ Mạnh Lộc</p>
+        <p>Một người đam mê Vật lý.</p>
+    </section>
+
+    <section id="about" class="content-section" style="background-color: rgba(0,0,0,0.3); border-radius: 12px; padding-top: 60px;">
+        <img src="img/IMG_4292.JPG" alt="Ảnh cá nhân của tôi" class="profile-pic">
+
+        <h2>Về Tôi</h2>
+        <p>
+            Xin chào! Tôi là Vũ Mạnh Lộc, và tôi yêu thích về điện tử và bán dẫn. 
+            Giống như một Nhà Lữ Hành trong Genshin Impact, tôi luôn tìm kiếm những kiến thức mà tôi chưa biết trong thế giới điện tử và bán dẫn.
+            Mục tiêu của tôi là học hỏi thêm được nhiều kiến thức cơ bản và biết thêm nhiều điều mới mẻ về lĩnh vực này.
+        </p>
+        <p>
+            Kỹ năng của tôi bao gồm: Lập trình cơ bản, đọc hiểu tài liệu, suy luận và làm việc nhóm.
+        </p>
+    </section>
+
+    <section id="portfolio" class="content-section">
+        <h2>Các Dự Án Của Tôi</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="img/bieudo.png" 
+                     alt="Dự án 1 - Phân tích dữ liệu"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/5a88c7/ffffff?text=Lỗi+Tải+Ảnh&fontsize=16';">
+                <h3>Dự Án 1</h3>
+                <p>Phân tích dữ liệu!
+                    Sử dụng Python và thư viện Pandas, numpy để phân tích dữ liệu bán hàng và tạo báo cáo trực quan.
+                </p>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/z7167264634414_15a3eac22d93ee8b5b467928ebf6e460.jpg" 
+                     alt="Dự án 2 - Cảnh Liyue"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/5a88c7/ffffff?text=Lỗi+Tải+Ảnh&fontsize=16';">
+                <h3>Dự Án 2</h3>
+                <p>Mô phỏng và tạo mạch dao động cơ bản dùng IC NE555!</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/z7167143897988_9adcff24492365ab6064a421ebec47ad.jpg" 
+                     alt="Dự án 3 - Cảnh Inazuma"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/5a88c7/ffffff?text=Lỗi+Tải+Ảnh&fontsize=16';">
+                <h3>Dự án 3</h3>
+                <p>Băng truyền phân loại!
+                    Hệ thống băng truyền phân loại tự động sử dụng cảm biến ánh sáng TCS34725 để phát hiện và phân loại các vật thể dựa trên màu sắc của chúng.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Liên Hệ -->
+    <section id="contact" class="content-section">
+        <h2>Liên Hệ Với Tôi</h2>
+        <p>Bạn có câu hỏi hoặc muốn hợp tác? Hãy gửi lời nhắn cho tôi!</p>
+        <form id="contact-form" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Tên của bạn" required>
+            <input type="email" id="email" name="email" placeholder="Email của bạn" required>
+            <textarea id="message" name="message" rows="5" placeholder="Lời nhắn của bạn" required></textarea>
+            <button type="submit">Gửi Lời Nhắn</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 bởi Vũ Mạnh Lộc. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
+
